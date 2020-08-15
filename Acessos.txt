@@ -1,0 +1,17 @@
+Conectar via Serial
+picocom -b 115200 /dev/ttyUSB0
+
+SAIR
+
+CONTROL + A + X
+
+
+Listar Itens 
+ampy --port /dev/ttyUSB0 ls
+
+Buscar item
+ampy --port /dev/ttyUSB0 get x.py
+
+
+Enviar itens
+ampy --port /dev/ttyUSB0 put boot.py
